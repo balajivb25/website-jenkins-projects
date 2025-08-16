@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         GIT_CREDENTIALS = 'github-https' // ID of your stored GitHub credentials in Jenkins
-        TARGET_BRANCH = 'gh-pages'       // GitHub Pages branch
+        TARGET_BRANCH = 'main'       // GitHub Pages branch
         BUILD_DIR = 'build'              // Output folder after build; use '.' if files are already ready
     }
 
