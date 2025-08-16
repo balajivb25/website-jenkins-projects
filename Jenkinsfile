@@ -17,7 +17,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: "${GIT_CREDENTIALS}",
-                    url: 'https://github.com/balajivb25/website-project.git'
+                    url: 'https://github.com/balajivb25/website-jenkins-project.git'
             }
         }
 
@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        git config --global user.email "jenkins@yourdomain.com"
+                        git config --global user.email "balajiv.b25@gmail.com"
                         git config --global user.name "Jenkins CI"
 
                         git checkout --orphan ${TARGET_BRANCH}
